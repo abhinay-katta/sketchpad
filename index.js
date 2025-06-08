@@ -11,7 +11,7 @@ const io = new Server(server);
 
 
 // to serve static files
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname, 'public')));
 
 io.on('connection', (socket) => {
   console.log('A user connected');
